@@ -27,13 +27,8 @@ class MainActivity : AppCompatActivity() {
 
         binding.mainViewModel = mainViewModel
 
-        mainViewModel._count.observe(this, Observer {
-            binding.btnCount.text = mainViewModel.count.toString()
-        })
 
-        binding.btnCount.setOnClickListener {
-            mainViewModel._count.value = mainViewModel.count++
-        }
+        binding.lifecycleOwner = this
 
     }
 
