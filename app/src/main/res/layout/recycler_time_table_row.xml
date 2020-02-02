@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tvClassProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/ic_flag_black_24dp"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/anonymous_pro"
+                tools:text="10 % Finished"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/tvDuration" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLectureDate"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:shadowColor="#673AB7"
+                android:text="@string/info"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:backgroundTint="#FFFFFF"
+                app:iconTint="#3F51B5"
+                app:layout_constraintBottom_toTopOf="@+id/tvEndTime"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvStartTime" />
+
+            <TextView
+                android:id="@+id/tvWeeks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/ic_today_black_24dp"
+                android:drawablePadding="5dp"
+                android:fontFamily="monospace"
+                android:gravity="center_vertical"
+                tools:text="WED/THU/SUN"
+                android:textAllCaps="true"
+                android:textColor="#3F51B5"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvClassProgress"
+                app:layout_constraintTop_toBottomOf="@+id/tvClassProgress" />
+
+            <TextView
+                android:id="@+id/tvClassTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                tools:text="Java Development Class"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.RecyclerRow.Title"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/ic_timeline_black_24dp"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/anonymous_pro"
+                tools:text="3 Monthes"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/tvClassTitle" />
+
+            <TextView
+                android:id="@+id/tvStartTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:gravity="center"
+                tools:text="10/10/20"
+                android:textColor="#3F51B5"
+                app:autoSizePresetSizes="@array/autosize_text_sizes"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tvClassTitle"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tvEndTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:gravity="center"
+                tools:text="Present"
+                android:textColor="#3F51B5"
+                app:autoSizePresetSizes="@array/autosize_text_sizes"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tvWeeks"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.21" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

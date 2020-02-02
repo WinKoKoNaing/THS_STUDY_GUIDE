@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        app:key="theme"
+        app:title="Choose theme"
+        android:entries="@array/theme"
+        app:entryValues="@array/theme_value"
+        android:defaultValue="3"
+        app:isPreferenceVisible="false"
+        app:iconSpaceReserved="false"/>
+
+    <Preference
+        app:key="about"
+        app:summary="0.1 beta version"
+        app:title="About Application"
+        app:iconSpaceReserved="false"/>
+</PreferenceScreen>

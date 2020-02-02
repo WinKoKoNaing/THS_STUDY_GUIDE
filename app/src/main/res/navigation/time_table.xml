@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/timeTable"
+    app:startDestination="@id/timeTableFragment">
+    <fragment
+        android:id="@+id/timeTableContainerFragment"
+        android:name="com.techhousestudio.porlar.thsstudyguide.timetable.TimeTableDetailFragment"
+        android:label="fragment_time_table_contrainer"
+        tools:layout="@layout/fragment_time_table_detail" />
+    <fragment
+        android:id="@+id/timeTableFragment"
+        android:name="com.techhousestudio.porlar.thsstudyguide.timetable.TimeTableFragment"
+        android:label="Course Timetable" />
+    <dialog
+        android:id="@+id/timeTableInfoFragment"
+        android:name="com.techhousestudio.porlar.thsstudyguide.timetable.TimeTableInfoFragment"
+        android:label="TimeTableInfoFragment" />
+    <action
+        android:id="@+id/action_global_timeTableInfoFragment"
+        app:destination="@id/timeTableInfoFragment"
+        app:enterAnim="@anim/fragment_open_enter"
+        app:exitAnim="@anim/fragment_open_exit"
+        app:popEnterAnim="@anim/fragment_open_enter"
+        app:popExitAnim="@anim/fragment_open_exit" />
+</navigation>

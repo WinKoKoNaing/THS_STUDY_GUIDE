@@ -1,3 +1,44 @@
 <resources>
-    <string name="app_name">THS Study Guide</string>
+    <string name="app_name">TechHS</string>
+
+    <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
+    <string name="facebook_application_id" translatable="false">2416787858538831</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb2416787858538831</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile">Profile</string>
+    <string name="lecture_info">Lecture Info</string>
+    <string name="lecture_notes">Lecture Notes</string>
+    <string name="computer_basic">Computer Basic</string>
+    <string name="iot">IOT</string>
+    <string name="nodejs">NODEJS</string>
+    <string name="java">JAVA</string>
+    <string name="php">PHP</string>
+    <string name="android">ANDROID</string>
+    <string name="filter_class_by">Filter class by :</string>
+    <string name="login_with_fb">Login with facebook</string>
+    <string name="admin_mode">Admin Mode</string>
+    <string name="course_details">Course Details</string>
+    <string name="info">Info</string>
+    <string name="time_table">TIME TABLE</string>
+    <string name="daily_lecture">DAILY LECTURE</string>
+    <string name="our_ths">OUR THS</string>
+    <string name="enter_topic">Enter Topic</string>
+    <string name="starttime">StartTime</string>
+    <string name="add">Add</string>
+
+    <array name="autosize_text_sizes">
+        <item>16sp</item>
+        <item>18sp</item>
+        <item>20sp</item>
+    </array>
+
+    <array name="theme">
+        <item>Light</item>
+        <item>Dark</item>
+        <item>Set by Battery Saver</item>
+    </array>
+
 </resources>

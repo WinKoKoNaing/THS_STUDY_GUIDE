@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="theme_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="language">
+        <item>Android</item>
+        <item>Php</item>
+        <item>NodeJs</item>
+        <item>Java</item>
+    </string-array>
+
+</resources>

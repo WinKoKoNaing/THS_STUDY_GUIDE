@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="timeTable"
+            type="com.techhousestudio.porlar.thsstudyguide.models.TimeTable" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".timetable.TimeTableInfoFragment">
+
+        <TextView
+            android:id="@+id/tvClassInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@{timeTable.classInfo}"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            tools:text="Haha" />
+
+    </androidx.cardview.widget.CardView>
+</layout>

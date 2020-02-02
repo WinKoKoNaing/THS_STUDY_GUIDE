@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "2527915591",
+    "firebase_url": "https://techhousestudio-1ca31.firebaseio.com",
+    "project_id": "techhousestudio-1ca31",
+    "storage_bucket": "techhousestudio-1ca31.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2527915591:android:aad74769357bf97354cb62",
+        "android_client_info": {
+          "package_name": "com.techhousestudio.porlar.thsstudyguide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "2527915591-aibioo8o1rb3oq8pjuu6c3h18nlbgp2j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.techhousestudio.porlar.thsstudyguide",
+            "certificate_hash": "c6f9e7f013eaed2b11db96906d3d56500fb51159"
+          }
+        },
+        {
+          "client_id": "2527915591-454uphg1inva8bea1st4rdq17pcog9qd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnDZ9yO3i0ODXU6evnm_r9tVnq0k8kiZs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "2527915591-454uphg1inva8bea1st4rdq17pcog9qd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

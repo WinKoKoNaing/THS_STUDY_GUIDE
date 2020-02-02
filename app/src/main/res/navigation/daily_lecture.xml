@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/daily_lecture"
+    app:startDestination="@id/dailyFragment">
+
+    <fragment
+        android:id="@+id/dailyFragment"
+        android:name="com.techhousestudio.porlar.thsstudyguide.lectures.DailyLectureFragment"
+        android:label="Daily Lectures"
+        tools:layout="@layout/fragment_daily" />
+    <fragment
+        android:id="@+id/dailyLectureContainerFragment"
+        android:name="com.techhousestudio.porlar.thsstudyguide.lectures.DailyLectureContentFragment"
+        android:label="fragment_daily_lecture_contrainer"
+        tools:layout="@layout/fragment_daily_lecture_contrainer">
+        <argument
+            android:name="post_id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/lectureDetailFilterFragment"
+        android:name="com.techhousestudio.porlar.thsstudyguide.lectures.LectureDetailFilterFragment"
+        android:label="Lecture Detail"
+        tools:layout="@layout/fragment_lecture_detail_filter" />
+    <action
+        android:id="@+id/action_global_lectureDetailFilterFragment"
+        app:destination="@id/lectureDetailFilterFragment"
+        app:enterAnim="@anim/fragment_close_enter"
+        app:exitAnim="@anim/fragment_close_exit"
+        app:popEnterAnim="@anim/fragment_close_enter"
+        app:popExitAnim="@anim/fragment_close_exit" />
+    <fragment
+        android:id="@+id/lectureDetailFragment"
+        android:name="com.techhousestudio.porlar.thsstudyguide.lectures.LectureDetailFragment"
+        android:label="Lecture Detail"
+        tools:layout="@layout/fragment_lecture_detail" />
+    <action
+        android:id="@+id/action_global_lectureDetailFragment"
+        app:destination="@id/lectureDetailFragment"
+        app:enterAnim="@anim/fragment_close_enter"
+        app:exitAnim="@anim/fragment_close_exit"
+        app:popEnterAnim="@anim/fragment_close_enter"
+        app:popExitAnim="@anim/fragment_close_exit" />
+    <dialog
+        android:id="@+id/profileFragment2"
+        android:name="com.techhousestudio.porlar.thsstudyguide.ourths.ProfileFragment"
+        android:label="ProfileFragment" />
+
+
+</navigation>

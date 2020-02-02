@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9610c6a9-9854-4d4f-8b81-092e1f973e42" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../java/com/techhousestudio/porlar/thsstudyguide/DailyFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/techhousestudio/porlar/thsstudyguide/FullscreenActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/techhousestudio/porlar/thsstudyguide/StudyNoteFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/techhousestudio/porlar/thsstudyguide/TimeTableFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../drawable-anydpi/ic_daily.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../drawable-hdpi/ic_daily.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../drawable-mdpi/ic_daily.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../drawable-xhdpi/ic_daily.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../drawable-xxhdpi/ic_daily.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_fullscreen.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/fragment_daily.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/fragment_study_note.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/fragment_time_table.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../menu/bottom_nav_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../navigation/nav_graph.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attrs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/color.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/techhousestudio/porlar/thsstudyguide/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/techhousestudio/porlar/thsstudyguide/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/techhousestudio/porlar/thsstudyguide/MainViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/techhousestudio/porlar/thsstudyguide/MainViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/techhousestudio/porlar/thsstudyguide/MyHandler.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/styles.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
+    <option name="width" value="1941" />
+    <option name="height" value="1101" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.project.structure.last.selected" value="SDK Location" />
+    <property name="android.project.structure.proportion" value="0.15" />
+    <property name="android.sdk.path" value="$PROJECT_DIR$/../../../../../../../Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../../PROJECTS/Vote App/VS4/VoteApp" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9610c6a9-9854-4d4f-8b81-092e1f973e42" name="Default Changelist" comment="" />
+      <created>1577248049387</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577248049387</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.3298887" />
+      <window_info id="Structure" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="Resources Explorer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Captures" order="0" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Palette&#9;" />
+    </layout>
+  </component>
+</project>
