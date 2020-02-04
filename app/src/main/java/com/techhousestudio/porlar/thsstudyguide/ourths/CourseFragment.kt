@@ -44,7 +44,7 @@ class CourseFragment : Fragment() {
         rv_courses.layoutManager = LinearLayoutManager(requireContext())
 
 
-        rv_courses.addItemDecoration(MarginItemDecoration(10))
+        rv_courses.addItemDecoration(MarginItemDecoration(16))
         query = FirebaseFirestore.getInstance()
             .collection("courses")
         queryByLanguage(query)

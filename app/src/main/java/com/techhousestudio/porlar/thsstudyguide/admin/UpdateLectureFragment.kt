@@ -86,7 +86,7 @@ class UpdateLectureFragment : DialogFragment(), SetOnTimeClickListener {
                     post = document.toObject(Post::class.java)
 
                     tvClassInfo.text =
-                        "${post.className}\n ${post.classLanguage} \n ${post.classTitle}"
+                        "${post.className}\n${post.classLanguage}\n${post.classTitle}"
                     etTopic.setText(post.postTopic)
                     btnStartTime.text = post.postStartTime
                     btnEndTime.text = post.postEndTime

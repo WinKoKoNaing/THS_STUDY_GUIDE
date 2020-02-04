@@ -26,8 +26,19 @@
     <string name="daily_lecture">DAILY LECTURE</string>
     <string name="our_ths">OUR THS</string>
     <string name="enter_topic">Enter Topic</string>
-    <string name="starttime">StartTime</string>
+    <string name="starttime">Start Time</string>
     <string name="add">Add</string>
+    <string name="enter_duration">Enter Duration</string>
+    <string name="enter_class_topic">Enter Class Topic</string>
+    <string name="enter_class_weeks">Enter Class Weeks</string>
+    <string name="enter_batch">Enter Batch</string>
+    <string name="enter_class_progress">Enter Class Progress</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="post">Post</string>
+    <string name="create_class">Create Class</string>
+    <string name="create_post">Create Post</string>
+    <string name="user_list">User List</string>
 
     <array name="autosize_text_sizes">
         <item>16sp</item>

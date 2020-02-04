@@ -37,7 +37,7 @@ class TimeTableInfoFragment : DialogFragment() {
         val d: Dialog? = dialog
         if (d != null) {
             val width = ViewGroup.LayoutParams.MATCH_PARENT
-            val height = ViewGroup.LayoutParams.WRAP_CONTENT
+            val height = ViewGroup.LayoutParams.MATCH_PARENT
             d.window?.setLayout(width, height)
         }
     }

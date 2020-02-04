@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        app:key="theme"
+        app:title="Choose theme"
+        app:isPreferenceVisible="false"
+        android:entries="@array/theme"
+        app:entryValues="@array/theme_value"
+        android:defaultValue="3"/>
+
+
+    <PreferenceCategory
+        android:title="About Tech House Studio">
+        <Preference
+            app:key="phone_no"
+            android:icon="@drawable/ic_contact_phone_black_24dp"
+            app:summary="Please call to ask if you have any question..."
+            app:title="Phone Number" >
+            <intent
+                android:action="android.intent.action.DIAL"
+                android:data="tel:09691445197" />
+        </Preference>
+
+        <Preference
+            app:key="facebook"
+            android:icon="@drawable/com_facebook_button_icon_blue"
+            app:summary="Please like and follow our facebook page"
+            app:title="Facebook Page">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://www.facebook.com/educationandsoftwareservice" />
+        </Preference>
+        <Preference
+            app:key="version"
+            android:icon="@drawable/bn_anim_home"
+            app:summary="0.1 Beta Version, See More in our Github repository"
+            app:title="Application">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/WinKoKoNaing/TechHouseStudio/releases" />
+        </Preference>
+
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>

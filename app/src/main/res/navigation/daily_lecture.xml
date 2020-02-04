@@ -47,6 +47,11 @@
         android:id="@+id/profileFragment2"
         android:name="com.techhousestudio.porlar.thsstudyguide.ourths.ProfileFragment"
         android:label="ProfileFragment" />
+    <fragment
+        android:id="@+id/messageFragment"
+        android:name="com.techhousestudio.porlar.thsstudyguide.lectures.MessageFragment"
+        android:label="Today Message Box"
+        tools:layout="@layout/fragment_message" />
 
 
 </navigation>

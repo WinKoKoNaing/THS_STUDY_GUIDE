@@ -3,12 +3,9 @@ package com.techhousestudio.porlar.thsstudyguide.ourths
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.app.AppCompatDelegate.*
 import androidx.preference.ListPreference
+import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 
 import com.techhousestudio.porlar.thsstudyguide.R
@@ -19,7 +16,7 @@ import timber.log.Timber
  */
 class SettingFragment : PreferenceFragmentCompat() {
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
-        setPreferencesFromResource(R.xml.setting, rootKey)
+        setPreferencesFromResource(R.xml.app_setting, rootKey)
         val theme = findPreference<ListPreference>("theme")
         theme?.setOnPreferenceChangeListener { _, newValue ->
             Timber.i("$newValue Value")
@@ -30,6 +27,12 @@ class SettingFragment : PreferenceFragmentCompat() {
             }
             return@setOnPreferenceChangeListener true
         }
+        val contact = findPreference<Preference>("contact")
+        contact?.setOnPreferenceClickListener {
+
+            return@setOnPreferenceClickListener true
+        }
+
     }
 
 

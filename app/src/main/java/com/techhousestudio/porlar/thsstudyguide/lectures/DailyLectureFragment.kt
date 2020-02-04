@@ -2,11 +2,11 @@ package com.techhousestudio.porlar.thsstudyguide.lectures
 
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.onNavDestinationSelected
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayoutMediator
 import com.techhousestudio.porlar.thsstudyguide.R
@@ -30,15 +30,26 @@ class DailyLectureFragment : Fragment() {
         )
 
 
+
         return binding.root
     }
 
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.lecture_menu, menu)
+    }
+
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return item.onNavDestinationSelected(findNavController())
+                || super.onOptionsItemSelected(item)
+    }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        setHasOptionsMenu(true)
         setupViewPager(viewPager)
         viewPager.setPageTransformer(ZoomOutPageTransformer())
-        val pageTitle = arrayListOf("Android", "Php", "NodeJs", "Java","IOT","Computer Basic")
+        val pageTitle = arrayListOf("Android", "Php", "NodeJs", "Java", "IOT", "Computer Basic")
         TabLayoutMediator(tabs, viewPager) { tab, position ->
             tab.text = pageTitle[position]
 

@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.core.os.bundleOf
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
 import com.techhousestudio.porlar.thsstudyguide.R
@@ -27,8 +28,9 @@ class AdminPostViewHolder(private val binding: RecyclerDailyLectureRowBinding) :
 
 
         binding.lectureCardView.setOnLongClickListener { v ->
-            val alertDialog = AlertDialog.Builder(v.context)
-            alertDialog.setTitle("Sure to delete?.")
+            val alertDialog = MaterialAlertDialogBuilder(v.context,R.style.AlertDialogTheme)
+            alertDialog.setTitle("Warning ...")
+            alertDialog.setMessage("Are you sure to delete?")
             alertDialog.setCancelable(false)
             alertDialog.setPositiveButton("Yes") { dialog, _ ->
                 db.collection("ths_lectures").document(post.postId.toString()).delete()

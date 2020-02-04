@@ -2,6 +2,10 @@ package com.techhousestudio.porlar.thsstudyguide.models
 
 import com.google.firebase.Timestamp
 
+data class role(
+    var userId: String
+
+)
 data class User(
     var userId: String = "",
     var userName: String = "",

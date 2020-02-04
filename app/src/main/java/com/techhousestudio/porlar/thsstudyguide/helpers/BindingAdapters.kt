@@ -14,7 +14,7 @@ class BindingAdapters {
         fun setDateTimeFormat(view: TextView, timestamp: Timestamp?) {
             if (timestamp != null)
                 view.text = SimpleDateFormat(
-                    "EEE, dd MMM yyyy HH:mm:ss",
+                    "EEE, dd MMM yyyy HH:mm",
                     Locale.ENGLISH
                 ).format(timestamp.toDate())
         }

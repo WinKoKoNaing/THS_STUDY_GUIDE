@@ -15,6 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/admin_mode"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:textColor="@color/secondaryColor"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,21 +28,21 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
 
-        android:fontFamily="@font/montserrat"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+
+
         android:text="THS Member"
         android:textColor="@color/secondaryColor"
-        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.card.MaterialCardView
         android:id="@+id/userInfo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        app:cardCornerRadius="10dp"
         app:cardUseCompatPadding="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,18 +64,19 @@
                 android:textSize="24sp"
                 tools:text="Win Ko Ko Naing" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnLogOut"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 android:layout_marginTop="8dp"
-                android:backgroundTint="#D81B60"
+                android:textColor="@color/colorPrimary"
                 android:text="@string/com_facebook_loginview_log_out_action" />
 
 
         </LinearLayout>
 
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
 
     <ImageView
         android:id="@+id/ivUserImageUri"

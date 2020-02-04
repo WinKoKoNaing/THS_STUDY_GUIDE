@@ -31,7 +31,7 @@ class CourseDetailFragment : Fragment() {
             .get().addOnSuccessListener {
                 val course = it.toObject(Course::class.java)
                 tvCourseTitle.text = course!!.courseName
-                tvCourseDetail.text = course.courseDetail
+                webView_course_detail.loadData(course.courseDetail, "text/html", "UTF-8")
             }
     }
 

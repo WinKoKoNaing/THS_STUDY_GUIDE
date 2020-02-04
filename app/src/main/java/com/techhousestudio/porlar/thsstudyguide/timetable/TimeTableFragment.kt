@@ -56,7 +56,7 @@ class TimeTableFragment : Fragment() {
 
         rvCourseList.layoutManager = LinearLayoutManager(this.requireContext())
 
-        rvCourseList.addItemDecoration(MarginItemDecoration(8))
+        rvCourseList.addItemDecoration(MarginItemDecoration(16))
         query = FirebaseFirestore.getInstance()
             .collection("thsClasses")
         queryByLanguage(query)

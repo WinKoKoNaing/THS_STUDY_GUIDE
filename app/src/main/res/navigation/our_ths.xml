@@ -58,6 +58,16 @@
             android:id="@+id/updateLectureFragment"
             android:name="com.techhousestudio.porlar.thsstudyguide.admin.UpdateLectureFragment"
             android:label="UpdateLectureFragment" />
+        <dialog
+            android:id="@+id/createClassFragment"
+            android:name="com.techhousestudio.porlar.thsstudyguide.admin.CreateClassFragment"
+            android:label="fragment_create_class"
+            tools:layout="@layout/fragment_create_class" />
+        <fragment
+            android:id="@+id/userListFragment"
+            android:name="com.techhousestudio.porlar.thsstudyguide.admin.UserListFragment"
+            android:label="fragment_user_list"
+            tools:layout="@layout/fragment_user_list" />
     </navigation>
     <fragment
         android:id="@+id/courseDetailFragment"

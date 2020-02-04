@@ -3,6 +3,7 @@ package com.techhousestudio.porlar.thsstudyguide.admin
 
 import android.app.Dialog
 import android.os.Bundle
+import android.text.TextUtils
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,6 +12,7 @@ import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
+import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.Timestamp
 import com.google.firebase.firestore.FirebaseFirestore
 import com.techhousestudio.porlar.thsstudyguide.R
@@ -102,6 +104,14 @@ class CreateLectureFragment : DialogFragment(), AdapterView.OnItemSelectedListen
             timePickerFragment.show(childFragmentManager, "end_time_picker")
         }
         btnPost.setOnClickListener {
+            if (TextUtils.isEmpty(etTopic.text)||
+                    TextUtils.isEmpty(etLectureNote.text)||
+                    btnStartTime.text.toString().toUpperCase(Locale.ROOT) == "START TIME"||
+                    btnEndTime.text.toString().toUpperCase(Locale.ROOT) == "END TIME"){
+                Snackbar.make(requireView(), "Fill All Box", Snackbar.LENGTH_LONG).show()
+                return@setOnClickListener
+            }
+
             val id = db.collection("ths_lectures").document().id
             val post = Post(
                 id,

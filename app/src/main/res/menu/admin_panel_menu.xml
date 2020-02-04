@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item android:id="@+id/createLectureFragment"
-        android:title="@string/add"
+    <item
+        android:id="@+id/createLectureFragment"
         android:icon="@drawable/menu_add_24dp"
-        app:showAsAction="ifRoom"/>
+        android:title="@string/add"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/createClassFragment"
+        android:title="@string/create_class"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/userListFragment"
+        android:title="@string/user_list"
+        app:showAsAction="never" />
 </menu>
