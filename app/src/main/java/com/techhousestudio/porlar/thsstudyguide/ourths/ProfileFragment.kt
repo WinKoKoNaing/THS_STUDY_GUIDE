@@ -149,7 +149,7 @@ class ProfileFragment : BottomSheetDialogFragment() {
                     user.providerData[0]?.photoUrl.toString()
                 )
                 db.collection("users").document(user.uid).set(savedUser).addOnSuccessListener {
-                    Toast.makeText(requireContext(), "Successful Login", Toast.LENGTH_LONG).show()
+//                    Toast.makeText(requireContext(), "Successful Login", Toast.LENGTH_LONG).show()
                 }
 
             } else {

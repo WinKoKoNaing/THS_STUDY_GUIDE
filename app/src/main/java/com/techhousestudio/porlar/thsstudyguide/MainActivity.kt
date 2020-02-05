@@ -1,31 +1,27 @@
 package com.techhousestudio.porlar.thsstudyguide
 
-import android.content.Context
-import android.content.pm.PackageInfo
-import android.content.pm.PackageManager
 import android.os.Bundle
-import android.util.Base64
-import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.os.bundleOf
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import androidx.navigation.NavController
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.firestore.FirebaseFirestore
 import com.techhousestudio.porlar.thsstudyguide.databinding.ActivityMainBinding
 import com.techhousestudio.porlar.thsstudyguide.helpers.setupWithNavController
+import com.techhousestudio.porlar.thsstudyguide.lectures.UpdateFragment
+import com.techhousestudio.porlar.thsstudyguide.models.MessageBox
 import kotlinx.android.synthetic.main.activity_main.*
 import timber.log.Timber
-import java.security.MessageDigest
-import java.security.NoSuchAlgorithmException
+
 
 class MainActivity : AppCompatActivity() {
 
+    val db = FirebaseFirestore.getInstance()
     lateinit var binding: ActivityMainBinding
     private var currentNavController: LiveData<NavController>? = null
 
@@ -43,10 +39,31 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+        db.collection("message_box")
+            .document("ths")
+            .get().addOnSuccessListener {
+                val messageBox = it.toObject(MessageBox::class.java)
+                val versionCode =
+                    BuildConfig.VERSION_CODE
+                val versionName =
+                    BuildConfig.VERSION_NAME
+                if (messageBox!!.hasUpdate && messageBox.currentVersion != versionName) {
+                    Timber.i("Show Dialog")
+                    val updateFragment = UpdateFragment()
+                    var b = bundleOf(
+                        "version" to messageBox.currentVersion
+                    )
+                    updateFragment.arguments = b
+                    updateFragment.isCancelable = false
+                    updateFragment.show(supportFragmentManager, "update")
+                }
+            }
+
+
 
         currentNavController?.observe(this, Observer {
             it.addOnDestinationChangedListener { _, destination, _ ->
-//                title = when (destination.id) {
+                //                title = when (destination.id) {
 //                    R.id.dailyFragment -> "Daily Lectures"
 //                    R.id.THSFragment -> "Tech House Studio"
 //                    R.id.timeTableFragment -> "Course Timetable"

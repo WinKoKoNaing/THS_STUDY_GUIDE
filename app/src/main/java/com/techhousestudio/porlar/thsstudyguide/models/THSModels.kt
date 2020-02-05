@@ -6,6 +6,13 @@ data class role(
     var userId: String
 
 )
+
+data class MessageBox(
+    var content: String = "",
+    var hasUpdate: Boolean = false,
+    var currentVersion: String = ""
+)
+
 data class User(
     var userId: String = "",
     var userName: String = "",
@@ -25,7 +32,7 @@ data class TimeTable(
     var classDuration: String = "",
     var classLanguage: String = "",
     var classWeeks: String = "",
-    var classInfo:String = "",
+    var classInfo: String = "",
     var userIdList: Map<String, Boolean>? = emptyMap(),
     var classProgress: Int = 0,
     var classNoteCaution: String = ""

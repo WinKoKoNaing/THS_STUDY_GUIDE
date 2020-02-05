@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".lectures.MessageFragment">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <data>
+
+        <variable
+            name="messageBox"
+            type="com.techhousestudio.porlar.thsstudyguide.models.MessageBox" />
+    </data>
+
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        tools:context=".lectures.MessageFragment">
 
-</FrameLayout>
+        <WebView
+            android:id="@+id/webView_message_box"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:checkMember="@{true}"
+            app:loadDataFromString="@{messageBox.content}" />
+    </FrameLayout>
+</layout>

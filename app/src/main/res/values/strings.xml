@@ -39,6 +39,7 @@
     <string name="create_class">Create Class</string>
     <string name="create_post">Create Post</string>
     <string name="user_list">User List</string>
+    <string name="please_update_app_version_and_download_from_github_latest_released">Please Update Version And Download From GitHub Latest Released</string>
 
     <array name="autosize_text_sizes">
         <item>16sp</item>
